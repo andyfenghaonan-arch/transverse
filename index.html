@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moloc Data Visualization</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Moloc Data Visualization</h1>
+            <p>Explore multi-locus colocalization analysis results</p>
+        </header>
+
+        <div class="controls-panel">
+            <div class="control-group">
+                <label for="gene-select">Select Gene:</label>
+                <select id="gene-select">
+                    <option value="">Select a gene...</option>
+                </select>
+            </div>
+            
+            <div class="control-group">
+                <label for="disease-select">Select Disease/Trait:</label>
+                <select id="disease-select">
+                    <option value="">Select a disease/trait...</option>
+                </select>
+            </div>
+            
+            <div class="control-group">
+                <label for="exposure-select">Select Exposure:</label>
+                <select id="exposure-select">
+                    <option value="">Select an exposure...</option>
+                </select>
+            </div>
+            
+            <div class="control-group">
+                <label for="visualization-type">Visualization Type:</label>
+                <select id="visualization-type">
+                    <option value="posterior">Posterior Probabilities</option>
+                    <option value="heatmap">Evidence Heatmap</option>
+                    <option value="table">Detailed Results Table</option>
+                    <option value="snp-evidence">SNP Evidence Plot</option>
+                </select>
+            </div>
+            
+            <button id="generate-viz" class="btn-primary">Generate Visualization</button>
+        </div>
+
+        <div class="visualization-container">
+            <div id="chart-container">
+                <canvas id="moloc-chart"></canvas>
+            </div>
+            <div id="table-container" style="display: none;">
+                <table id="moloc-table">
+                    <thead>
+                        <tr>
+                            <th>Gene</th>
+                            <th>Exposure</th>
+                            <th>Outcome</th>
+                            <th>SNPs</th>
+                            <th>Best SNP</th>
+                            <th>PP A</th>
+                            <th>PP B</th>
+                            <th>PP AB</th>
+                            <th>PP C</th>
+                            <th>PP AC</th>
+                            <th>PP BC</th>
+                            <th>PP ABC</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table-body">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="info-panel">
+            <div id="moloc-info">
+                <h3>Moloc Analysis Information</h3>
+                <div id="info-content">
+                    <p>Loading Moloc data... Please wait.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

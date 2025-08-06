@@ -1,0 +1,509 @@
+{
+  "genes": [
+    {
+      "id": "ENSG00000139618",
+      "symbol": "BRCA2",
+      "name": "BRCA2 DNA repair associated",
+      "chromosome": "chr13",
+      "start": 32315086,
+      "end": 32400266,
+      "strand": "+"
+    },
+    {
+      "id": "ENSG00000012048",
+      "symbol": "BRCA1",
+      "name": "BRCA1 DNA repair associated",
+      "chromosome": "chr17",
+      "start": 43044295,
+      "end": 43170245,
+      "strand": "-"
+    },
+    {
+      "id": "ENSG00000141510",
+      "symbol": "TP53",
+      "name": "tumor protein p53",
+      "chromosome": "chr17",
+      "start": 7661779,
+      "end": 7687550,
+      "strand": "-"
+    },
+    {
+      "id": "ENSG00000146648",
+      "symbol": "EGFR",
+      "name": "epidermal growth factor receptor",
+      "chromosome": "chr7",
+      "start": 55019021,
+      "end": 55211628,
+      "strand": "+"
+    },
+    {
+      "id": "ENSG00000136997",
+      "symbol": "MYC",
+      "name": "MYC proto-oncogene",
+      "chromosome": "chr8",
+      "start": 127735434,
+      "end": 127742951,
+      "strand": "+"
+    },
+    {
+      "id": "ENSG00000174775",
+      "symbol": "HRAS",
+      "name": "HRas proto-oncogene",
+      "chromosome": "chr11",
+      "start": 534242,
+      "end": 538872,
+      "strand": "-"
+    },
+    {
+      "id": "ENSG00000171862",
+      "symbol": "PTEN",
+      "name": "phosphatase and tensin homolog",
+      "chromosome": "chr10",
+      "start": 87863113,
+      "end": 87971930,
+      "strand": "+"
+    },
+    {
+      "id": "ENSG00000134086",
+      "symbol": "VHL",
+      "name": "von Hippel-Lindau tumor suppressor",
+      "chromosome": "chr3",
+      "start": 10141394,
+      "end": 10195013,
+      "strand": "+"
+    }
+  ],
+  "snps": [
+    {
+      "id": "rs144848",
+      "chromosome": "chr13",
+      "position": 32325076,
+      "ref": "G",
+      "alt": "A",
+      "maf": 0.35
+    },
+    {
+      "id": "rs1799950",
+      "chromosome": "chr17",
+      "position": 43063873,
+      "ref": "A",
+      "alt": "G",
+      "maf": 0.28
+    },
+    {
+      "id": "rs17878362",
+      "chromosome": "chr17",
+      "position": 7675088,
+      "ref": "C",
+      "alt": "T",
+      "maf": 0.15
+    },
+    {
+      "id": "rs11543848",
+      "chromosome": "chr7",
+      "position": 55087058,
+      "ref": "G",
+      "alt": "T",
+      "maf": 0.42
+    },
+    {
+      "id": "rs4645843",
+      "chromosome": "chr7",
+      "position": 55155502,
+      "ref": "C",
+      "alt": "A",
+      "maf": 0.31
+    },
+    {
+      "id": "rs6983267",
+      "chromosome": "chr8",
+      "position": 127735851,
+      "ref": "G",
+      "alt": "T",
+      "maf": 0.48
+    },
+    {
+      "id": "rs1801018",
+      "chromosome": "chr8",
+      "position": 127740958,
+      "ref": "C",
+      "alt": "T",
+      "maf": 0.22
+    },
+    {
+      "id": "rs12628",
+      "chromosome": "chr11",
+      "position": 534747,
+      "ref": "C",
+      "alt": "T",
+      "maf": 0.18
+    },
+    {
+      "id": "rs2735343",
+      "chromosome": "chr10",
+      "position": 87933147,
+      "ref": "G",
+      "alt": "A",
+      "maf": 0.38
+    },
+    {
+      "id": "rs779805",
+      "chromosome": "chr10",
+      "position": 87957915,
+      "ref": "A",
+      "alt": "G",
+      "maf": 0.29
+    },
+    {
+      "id": "rs1642785",
+      "chromosome": "chr3",
+      "position": 10183640,
+      "ref": "G",
+      "alt": "A",
+      "maf": 0.33
+    },
+    {
+      "id": "rs4236",
+      "chromosome": "chr13",
+      "position": 32355076,
+      "ref": "T",
+      "alt": "C",
+      "maf": 0.26
+    },
+    {
+      "id": "rs28897732",
+      "chromosome": "chr17",
+      "position": 43082575,
+      "ref": "A",
+      "alt": "T",
+      "maf": 0.19
+    }
+  ],
+  "eqtl_associations": [
+    {
+      "gene_id": "ENSG00000139618",
+      "gene_symbol": "BRCA2",
+      "snp_id": "rs144848",
+      "pvalue": 2.3e-8,
+      "beta": 0.45,
+      "se": 0.08,
+      "samples": [
+        {"sample_id": "S001", "genotype": "GG", "expression": 5.2, "tissue": "breast"},
+        {"sample_id": "S002", "genotype": "GA", "expression": 5.7, "tissue": "breast"},
+        {"sample_id": "S003", "genotype": "AA", "expression": 6.1, "tissue": "breast"},
+        {"sample_id": "S004", "genotype": "GG", "expression": 5.0, "tissue": "breast"},
+        {"sample_id": "S005", "genotype": "GA", "expression": 5.9, "tissue": "breast"},
+        {"sample_id": "S006", "genotype": "AA", "expression": 6.3, "tissue": "breast"},
+        {"sample_id": "S007", "genotype": "GG", "expression": 4.8, "tissue": "breast"},
+        {"sample_id": "S008", "genotype": "GA", "expression": 5.8, "tissue": "breast"},
+        {"sample_id": "S009", "genotype": "AA", "expression": 6.0, "tissue": "breast"},
+        {"sample_id": "S010", "genotype": "GG", "expression": 5.1, "tissue": "breast"},
+        {"sample_id": "S011", "genotype": "GA", "expression": 5.6, "tissue": "breast"},
+        {"sample_id": "S012", "genotype": "AA", "expression": 6.2, "tissue": "breast"},
+        {"sample_id": "S013", "genotype": "GG", "expression": 4.9, "tissue": "breast"},
+        {"sample_id": "S014", "genotype": "GA", "expression": 5.8, "tissue": "breast"},
+        {"sample_id": "S015", "genotype": "AA", "expression": 6.4, "tissue": "breast"}
+      ]
+    },
+    {
+      "gene_id": "ENSG00000139618",
+      "gene_symbol": "BRCA2",
+      "snp_id": "rs4236",
+      "pvalue": 1.8e-4,
+      "beta": -0.23,
+      "se": 0.06,
+      "samples": [
+        {"sample_id": "S016", "genotype": "TT", "expression": 5.8, "tissue": "lung"},
+        {"sample_id": "S017", "genotype": "TC", "expression": 5.5, "tissue": "lung"},
+        {"sample_id": "S018", "genotype": "CC", "expression": 5.2, "tissue": "lung"},
+        {"sample_id": "S019", "genotype": "TT", "expression": 5.7, "tissue": "lung"},
+        {"sample_id": "S020", "genotype": "TC", "expression": 5.4, "tissue": "lung"},
+        {"sample_id": "S021", "genotype": "CC", "expression": 5.0, "tissue": "lung"},
+        {"sample_id": "S022", "genotype": "TT", "expression": 5.9, "tissue": "lung"},
+        {"sample_id": "S023", "genotype": "TC", "expression": 5.6, "tissue": "lung"},
+        {"sample_id": "S024", "genotype": "CC", "expression": 5.1, "tissue": "lung"},
+        {"sample_id": "S025", "genotype": "TT", "expression": 5.8, "tissue": "lung"},
+        {"sample_id": "S026", "genotype": "TC", "expression": 5.3, "tissue": "lung"},
+        {"sample_id": "S027", "genotype": "CC", "expression": 4.9, "tissue": "lung"},
+        {"sample_id": "S028", "genotype": "TT", "expression": 6.0, "tissue": "lung"},
+        {"sample_id": "S029", "genotype": "TC", "expression": 5.7, "tissue": "lung"},
+        {"sample_id": "S030", "genotype": "CC", "expression": 5.3, "tissue": "lung"}
+      ]
+    },
+    {
+      "gene_id": "ENSG00000012048",
+      "gene_symbol": "BRCA1",
+      "snp_id": "rs1799950",
+      "pvalue": 1.5e-6,
+      "beta": -0.32,
+      "se": 0.07,
+      "samples": [
+        {"sample_id": "S001", "genotype": "AA", "expression": 7.2, "tissue": "breast"},
+        {"sample_id": "S002", "genotype": "AG", "expression": 6.8, "tissue": "breast"},
+        {"sample_id": "S003", "genotype": "GG", "expression": 6.4, "tissue": "breast"},
+        {"sample_id": "S004", "genotype": "AA", "expression": 7.1, "tissue": "breast"},
+        {"sample_id": "S005", "genotype": "AG", "expression": 6.7, "tissue": "breast"},
+        {"sample_id": "S006", "genotype": "GG", "expression": 6.2, "tissue": "breast"},
+        {"sample_id": "S007", "genotype": "AA", "expression": 7.3, "tissue": "breast"},
+        {"sample_id": "S008", "genotype": "AG", "expression": 6.9, "tissue": "breast"},
+        {"sample_id": "S009", "genotype": "GG", "expression": 6.3, "tissue": "breast"},
+        {"sample_id": "S010", "genotype": "AA", "expression": 7.0, "tissue": "breast"},
+        {"sample_id": "S011", "genotype": "AG", "expression": 6.6, "tissue": "breast"},
+        {"sample_id": "S012", "genotype": "GG", "expression": 6.1, "tissue": "breast"},
+        {"sample_id": "S013", "genotype": "AA", "expression": 7.4, "tissue": "breast"},
+        {"sample_id": "S014", "genotype": "AG", "expression": 6.8, "tissue": "breast"},
+        {"sample_id": "S015", "genotype": "GG", "expression": 6.5, "tissue": "breast"}
+      ]
+    },
+    {
+      "gene_id": "ENSG00000012048",
+      "gene_symbol": "BRCA1",
+      "snp_id": "rs28897732",
+      "pvalue": 3.7e-3,
+      "beta": 0.18,
+      "se": 0.06,
+      "samples": [
+        {"sample_id": "S031", "genotype": "AA", "expression": 6.5, "tissue": "ovarian"},
+        {"sample_id": "S032", "genotype": "AT", "expression": 6.7, "tissue": "ovarian"},
+        {"sample_id": "S033", "genotype": "TT", "expression": 6.9, "tissue": "ovarian"},
+        {"sample_id": "S034", "genotype": "AA", "expression": 6.4, "tissue": "ovarian"},
+        {"sample_id": "S035", "genotype": "AT", "expression": 6.8, "tissue": "ovarian"},
+        {"sample_id": "S036", "genotype": "TT", "expression": 7.1, "tissue": "ovarian"},
+        {"sample_id": "S037", "genotype": "AA", "expression": 6.3, "tissue": "ovarian"},
+        {"sample_id": "S038", "genotype": "AT", "expression": 6.6, "tissue": "ovarian"},
+        {"sample_id": "S039", "genotype": "TT", "expression": 6.8, "tissue": "ovarian"},
+        {"sample_id": "S040", "genotype": "AA", "expression": 6.6, "tissue": "ovarian"},
+        {"sample_id": "S041", "genotype": "AT", "expression": 6.9, "tissue": "ovarian"},
+        {"sample_id": "S042", "genotype": "TT", "expression": 7.0, "tissue": "ovarian"},
+        {"sample_id": "S043", "genotype": "AA", "expression": 6.2, "tissue": "ovarian"},
+        {"sample_id": "S044", "genotype": "AT", "expression": 6.7, "tissue": "ovarian"},
+        {"sample_id": "S045", "genotype": "TT", "expression": 6.9, "tissue": "ovarian"}
+      ]
+    },
+    {
+      "gene_id": "ENSG00000141510",
+      "gene_symbol": "TP53",
+      "snp_id": "rs17878362",
+      "pvalue": 3.2e-5,
+      "beta": 0.28,
+      "se": 0.06,
+      "samples": [
+        {"sample_id": "S001", "genotype": "CC", "expression": 8.1, "tissue": "breast"},
+        {"sample_id": "S002", "genotype": "CT", "expression": 8.4, "tissue": "breast"},
+        {"sample_id": "S003", "genotype": "TT", "expression": 8.7, "tissue": "breast"},
+        {"sample_id": "S004", "genotype": "CC", "expression": 8.0, "tissue": "breast"},
+        {"sample_id": "S005", "genotype": "CT", "expression": 8.3, "tissue": "breast"},
+        {"sample_id": "S006", "genotype": "TT", "expression": 8.8, "tissue": "breast"},
+        {"sample_id": "S007", "genotype": "CC", "expression": 7.9, "tissue": "breast"},
+        {"sample_id": "S008", "genotype": "CT", "expression": 8.5, "tissue": "breast"},
+        {"sample_id": "S009", "genotype": "TT", "expression": 8.6, "tissue": "breast"},
+        {"sample_id": "S010", "genotype": "CC", "expression": 8.2, "tissue": "breast"},
+        {"sample_id": "S011", "genotype": "CT", "expression": 8.4, "tissue": "breast"},
+        {"sample_id": "S012", "genotype": "TT", "expression": 8.9, "tissue": "breast"},
+        {"sample_id": "S013", "genotype": "CC", "expression": 7.8, "tissue": "breast"},
+        {"sample_id": "S014", "genotype": "CT", "expression": 8.3, "tissue": "breast"},
+        {"sample_id": "S015", "genotype": "TT", "expression": 8.7, "tissue": "breast"}
+      ]
+    },
+    {
+      "gene_id": "ENSG00000146648",
+      "gene_symbol": "EGFR",
+      "snp_id": "rs11543848",
+      "pvalue": 8.9e-12,
+      "beta": 0.62,
+      "se": 0.09,
+      "samples": [
+        {"sample_id": "S046", "genotype": "GG", "expression": 9.2, "tissue": "lung"},
+        {"sample_id": "S047", "genotype": "GT", "expression": 9.8, "tissue": "lung"},
+        {"sample_id": "S048", "genotype": "TT", "expression": 10.4, "tissue": "lung"},
+        {"sample_id": "S049", "genotype": "GG", "expression": 9.0, "tissue": "lung"},
+        {"sample_id": "S050", "genotype": "GT", "expression": 9.7, "tissue": "lung"},
+        {"sample_id": "S051", "genotype": "TT", "expression": 10.2, "tissue": "lung"},
+        {"sample_id": "S052", "genotype": "GG", "expression": 9.3, "tissue": "lung"},
+        {"sample_id": "S053", "genotype": "GT", "expression": 9.9, "tissue": "lung"},
+        {"sample_id": "S054", "genotype": "TT", "expression": 10.5, "tissue": "lung"},
+        {"sample_id": "S055", "genotype": "GG", "expression": 9.1, "tissue": "lung"},
+        {"sample_id": "S056", "genotype": "GT", "expression": 9.6, "tissue": "lung"},
+        {"sample_id": "S057", "genotype": "TT", "expression": 10.3, "tissue": "lung"},
+        {"sample_id": "S058", "genotype": "GG", "expression": 8.9, "tissue": "lung"},
+        {"sample_id": "S059", "genotype": "GT", "expression": 9.8, "tissue": "lung"},
+        {"sample_id": "S060", "genotype": "TT", "expression": 10.1, "tissue": "lung"}
+      ]
+    },
+    {
+      "gene_id": "ENSG00000146648",
+      "gene_symbol": "EGFR",
+      "snp_id": "rs4645843",
+      "pvalue": 2.1e-2,
+      "beta": -0.15,
+      "se": 0.07,
+      "samples": [
+        {"sample_id": "S061", "genotype": "CC", "expression": 9.8, "tissue": "brain"},
+        {"sample_id": "S062", "genotype": "CA", "expression": 9.6, "tissue": "brain"},
+        {"sample_id": "S063", "genotype": "AA", "expression": 9.4, "tissue": "brain"},
+        {"sample_id": "S064", "genotype": "CC", "expression": 9.9, "tissue": "brain"},
+        {"sample_id": "S065", "genotype": "CA", "expression": 9.7, "tissue": "brain"},
+        {"sample_id": "S066", "genotype": "AA", "expression": 9.3, "tissue": "brain"},
+        {"sample_id": "S067", "genotype": "CC", "expression": 9.7, "tissue": "brain"},
+        {"sample_id": "S068", "genotype": "CA", "expression": 9.5, "tissue": "brain"},
+        {"sample_id": "S069", "genotype": "AA", "expression": 9.2, "tissue": "brain"},
+        {"sample_id": "S070", "genotype": "CC", "expression": 10.0, "tissue": "brain"},
+        {"sample_id": "S071", "genotype": "CA", "expression": 9.8, "tissue": "brain"},
+        {"sample_id": "S072", "genotype": "AA", "expression": 9.5, "tissue": "brain"},
+        {"sample_id": "S073", "genotype": "CC", "expression": 9.6, "tissue": "brain"},
+        {"sample_id": "S074", "genotype": "CA", "expression": 9.4, "tissue": "brain"},
+        {"sample_id": "S075", "genotype": "AA", "expression": 9.1, "tissue": "brain"}
+      ]
+    },
+    {
+      "gene_id": "ENSG00000136997",
+      "gene_symbol": "MYC",
+      "snp_id": "rs6983267",
+      "pvalue": 4.7e-15,
+      "beta": 0.78,
+      "se": 0.08,
+      "samples": [
+        {"sample_id": "S076", "genotype": "GG", "expression": 11.2, "tissue": "colon"},
+        {"sample_id": "S077", "genotype": "GT", "expression": 12.0, "tissue": "colon"},
+        {"sample_id": "S078", "genotype": "TT", "expression": 12.8, "tissue": "colon"},
+        {"sample_id": "S079", "genotype": "GG", "expression": 11.0, "tissue": "colon"},
+        {"sample_id": "S080", "genotype": "GT", "expression": 11.9, "tissue": "colon"},
+        {"sample_id": "S081", "genotype": "TT", "expression": 12.7, "tissue": "colon"},
+        {"sample_id": "S082", "genotype": "GG", "expression": 11.3, "tissue": "colon"},
+        {"sample_id": "S083", "genotype": "GT", "expression": 12.1, "tissue": "colon"},
+        {"sample_id": "S084", "genotype": "TT", "expression": 12.9, "tissue": "colon"},
+        {"sample_id": "S085", "genotype": "GG", "expression": 11.1, "tissue": "colon"},
+        {"sample_id": "S086", "genotype": "GT", "expression": 11.8, "tissue": "colon"},
+        {"sample_id": "S087", "genotype": "TT", "expression": 12.6, "tissue": "colon"},
+        {"sample_id": "S088", "genotype": "GG", "expression": 10.9, "tissue": "colon"},
+        {"sample_id": "S089", "genotype": "GT", "expression": 12.0, "tissue": "colon"},
+        {"sample_id": "S090", "genotype": "TT", "expression": 12.8, "tissue": "colon"}
+      ]
+    },
+    {
+      "gene_id": "ENSG00000136997",
+      "gene_symbol": "MYC",
+      "snp_id": "rs1801018",
+      "pvalue": 6.8e-3,
+      "beta": -0.19,
+      "se": 0.07,
+      "samples": [
+        {"sample_id": "S091", "genotype": "CC", "expression": 11.8, "tissue": "prostate"},
+        {"sample_id": "S092", "genotype": "CT", "expression": 11.6, "tissue": "prostate"},
+        {"sample_id": "S093", "genotype": "TT", "expression": 11.3, "tissue": "prostate"},
+        {"sample_id": "S094", "genotype": "CC", "expression": 11.9, "tissue": "prostate"},
+        {"sample_id": "S095", "genotype": "CT", "expression": 11.5, "tissue": "prostate"},
+        {"sample_id": "S096", "genotype": "TT", "expression": 11.2, "tissue": "prostate"},
+        {"sample_id": "S097", "genotype": "CC", "expression": 11.7, "tissue": "prostate"},
+        {"sample_id": "S098", "genotype": "CT", "expression": 11.4, "tissue": "prostate"},
+        {"sample_id": "S099", "genotype": "TT", "expression": 11.1, "tissue": "prostate"},
+        {"sample_id": "S100", "genotype": "CC", "expression": 12.0, "tissue": "prostate"},
+        {"sample_id": "S101", "genotype": "CT", "expression": 11.7, "tissue": "prostate"},
+        {"sample_id": "S102", "genotype": "TT", "expression": 11.4, "tissue": "prostate"},
+        {"sample_id": "S103", "genotype": "CC", "expression": 11.6, "tissue": "prostate"},
+        {"sample_id": "S104", "genotype": "CT", "expression": 11.3, "tissue": "prostate"},
+        {"sample_id": "S105", "genotype": "TT", "expression": 11.0, "tissue": "prostate"}
+      ]
+    },
+    {
+      "gene_id": "ENSG00000174775",
+      "gene_symbol": "HRAS",
+      "snp_id": "rs12628",
+      "pvalue": 1.2e-7,
+      "beta": 0.51,
+      "se": 0.09,
+      "samples": [
+        {"sample_id": "S106", "genotype": "CC", "expression": 7.8, "tissue": "bladder"},
+        {"sample_id": "S107", "genotype": "CT", "expression": 8.3, "tissue": "bladder"},
+        {"sample_id": "S108", "genotype": "TT", "expression": 8.8, "tissue": "bladder"},
+        {"sample_id": "S109", "genotype": "CC", "expression": 7.6, "tissue": "bladder"},
+        {"sample_id": "S110", "genotype": "CT", "expression": 8.1, "tissue": "bladder"},
+        {"sample_id": "S111", "genotype": "TT", "expression": 8.7, "tissue": "bladder"},
+        {"sample_id": "S112", "genotype": "CC", "expression": 7.9, "tissue": "bladder"},
+        {"sample_id": "S113", "genotype": "CT", "expression": 8.4, "tissue": "bladder"},
+        {"sample_id": "S114", "genotype": "TT", "expression": 8.9, "tissue": "bladder"},
+        {"sample_id": "S115", "genotype": "CC", "expression": 7.7, "tissue": "bladder"},
+        {"sample_id": "S116", "genotype": "CT", "expression": 8.2, "tissue": "bladder"},
+        {"sample_id": "S117", "genotype": "TT", "expression": 8.6, "tissue": "bladder"},
+        {"sample_id": "S118", "genotype": "CC", "expression": 7.5, "tissue": "bladder"},
+        {"sample_id": "S119", "genotype": "CT", "expression": 8.0, "tissue": "bladder"},
+        {"sample_id": "S120", "genotype": "TT", "expression": 8.8, "tissue": "bladder"}
+      ]
+    },
+    {
+      "gene_id": "ENSG00000171862",
+      "gene_symbol": "PTEN",
+      "snp_id": "rs2735343",
+      "pvalue": 5.6e-9,
+      "beta": -0.42,
+      "se": 0.07,
+      "samples": [
+        {"sample_id": "S121", "genotype": "GG", "expression": 6.8, "tissue": "prostate"},
+        {"sample_id": "S122", "genotype": "GA", "expression": 6.4, "tissue": "prostate"},
+        {"sample_id": "S123", "genotype": "AA", "expression": 6.0, "tissue": "prostate"},
+        {"sample_id": "S124", "genotype": "GG", "expression": 6.9, "tissue": "prostate"},
+        {"sample_id": "S125", "genotype": "GA", "expression": 6.3, "tissue": "prostate"},
+        {"sample_id": "S126", "genotype": "AA", "expression": 5.9, "tissue": "prostate"},
+        {"sample_id": "S127", "genotype": "GG", "expression": 6.7, "tissue": "prostate"},
+        {"sample_id": "S128", "genotype": "GA", "expression": 6.5, "tissue": "prostate"},
+        {"sample_id": "S129", "genotype": "AA", "expression": 6.1, "tissue": "prostate"},
+        {"sample_id": "S130", "genotype": "GG", "expression": 7.0, "tissue": "prostate"},
+        {"sample_id": "S131", "genotype": "GA", "expression": 6.2, "tissue": "prostate"},
+        {"sample_id": "S132", "genotype": "AA", "expression": 5.8, "tissue": "prostate"},
+        {"sample_id": "S133", "genotype": "GG", "expression": 6.6, "tissue": "prostate"},
+        {"sample_id": "S134", "genotype": "GA", "expression": 6.4, "tissue": "prostate"},
+        {"sample_id": "S135", "genotype": "AA", "expression": 6.0, "tissue": "prostate"}
+      ]
+    },
+    {
+      "gene_id": "ENSG00000171862",
+      "gene_symbol": "PTEN",
+      "snp_id": "rs779805",
+      "pvalue": 1.8e-1,
+      "beta": 0.08,
+      "se": 0.06,
+      "samples": [
+        {"sample_id": "S136", "genotype": "AA", "expression": 6.2, "tissue": "endometrial"},
+        {"sample_id": "S137", "genotype": "AG", "expression": 6.3, "tissue": "endometrial"},
+        {"sample_id": "S138", "genotype": "GG", "expression": 6.4, "tissue": "endometrial"},
+        {"sample_id": "S139", "genotype": "AA", "expression": 6.1, "tissue": "endometrial"},
+        {"sample_id": "S140", "genotype": "AG", "expression": 6.2, "tissue": "endometrial"},
+        {"sample_id": "S141", "genotype": "GG", "expression": 6.3, "tissue": "endometrial"},
+        {"sample_id": "S142", "genotype": "AA", "expression": 6.3, "tissue": "endometrial"},
+        {"sample_id": "S143", "genotype": "AG", "expression": 6.4, "tissue": "endometrial"},
+        {"sample_id": "S144", "genotype": "GG", "expression": 6.5, "tissue": "endometrial"},
+        {"sample_id": "S145", "genotype": "AA", "expression": 6.0, "tissue": "endometrial"},
+        {"sample_id": "S146", "genotype": "AG", "expression": 6.1, "tissue": "endometrial"},
+        {"sample_id": "S147", "genotype": "GG", "expression": 6.2, "tissue": "endometrial"},
+        {"sample_id": "S148", "genotype": "AA", "expression": 6.4, "tissue": "endometrial"},
+        {"sample_id": "S149", "genotype": "AG", "expression": 6.5, "tissue": "endometrial"},
+        {"sample_id": "S150", "genotype": "GG", "expression": 6.6, "tissue": "endometrial"}
+      ]
+    },
+    {
+      "gene_id": "ENSG00000134086",
+      "gene_symbol": "VHL",
+      "snp_id": "rs1642785",
+      "pvalue": 3.4e-6,
+      "beta": 0.35,
+      "se": 0.07,
+      "samples": [
+        {"sample_id": "S151", "genotype": "GG", "expression": 4.2, "tissue": "kidney"},
+        {"sample_id": "S152", "genotype": "GA", "expression": 4.5, "tissue": "kidney"},
+        {"sample_id": "S153", "genotype": "AA", "expression": 4.9, "tissue": "kidney"},
+        {"sample_id": "S154", "genotype": "GG", "expression": 4.1, "tissue": "kidney"},
+        {"sample_id": "S155", "genotype": "GA", "expression": 4.6, "tissue": "kidney"},
+        {"sample_id": "S156", "genotype": "AA", "expression": 5.0, "tissue": "kidney"},
+        {"sample_id": "S157", "genotype": "GG", "expression": 4.3, "tissue": "kidney"},
+        {"sample_id": "S158", "genotype": "GA", "expression": 4.4, "tissue": "kidney"},
+        {"sample_id": "S159", "genotype": "AA", "expression": 4.8, "tissue": "kidney"},
+        {"sample_id": "S160", "genotype": "GG", "expression": 4.0, "tissue": "kidney"},
+        {"sample_id": "S161", "genotype": "GA", "expression": 4.7, "tissue": "kidney"},
+        {"sample_id": "S162", "genotype": "AA", "expression": 5.1, "tissue": "kidney"},
+        {"sample_id": "S163", "genotype": "GG", "expression": 4.2, "tissue": "kidney"},
+        {"sample_id": "S164", "genotype": "GA", "expression": 4.5, "tissue": "kidney"},
+        {"sample_id": "S165", "genotype": "AA", "expression": 4.9, "tissue": "kidney"}
+      ]
+    }
+  ]
+}
