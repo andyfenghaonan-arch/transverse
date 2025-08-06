@@ -1,111 +1,145 @@
 # Moloc Data Visualization Platform
 
-一个交互式的网页平台，用于可视化和分析Moloc（多位点共定位分析）数据。
+An interactive web platform for visualizing and analyzing Moloc (multi-locus colocalization analysis) data.
 
-## 🌟 功能特点
+## 🌟 Features
 
-- **交互式数据探索**：通过下拉菜单选择基因、疾病/性状和暴露因子
-- **智能级联过滤**：选择一个选项后，其他选项自动过滤，只显示有匹配数据的选项
-- **记录数量显示**：每个选项显示对应的记录数量，帮助用户了解数据分布
-- **多种可视化方式**：
-  - 后验概率图：比较不同共定位假设的概率
-  - 证据热图：显示证据强度的分布
-  - 详细结果表：完整的数据表格视图
-  - SNP证据图：分析SNP频率和平均概率
+- **Interactive Data Exploration**: Select genes, diseases/traits, and exposure factors through dropdown menus
+- **Smart Cascading Filters**: When selecting one option, other options automatically filter to show only matching records
+- **Record Count Display**: Each option shows the number of corresponding records, helping users understand data distribution
+- **Multiple Visualization Types**:
+  - Posterior Probability Chart: Compare probabilities of different colocalization hypotheses
+  - Evidence Heatmap: Display distribution of evidence strength
+  - Detailed Results Table: Complete tabular data view
+  - SNP Evidence Plot: Analyze SNP frequency and average probabilities
 
-## 📊 数据说明
+## 📊 Data Description
 
-本平台处理Moloc分析结果，包含以下信息：
-- **PP A**: 只有性状A有因果变异的概率
-- **PP B**: 只有性状B有因果变异的概率  
-- **PP C**: 只有性状C有因果变异的概率
-- **PP AB**: 性状A和B共享因果变异的概率
-- **PP AC**: 性状A和C共享因果变异的概率
-- **PP BC**: 性状B和C共享因果变异的概率
-- **PP ABC**: 三个性状都共享因果变异的概率
+This platform processes Moloc analysis results, including the following information:
+- **PP A**: Probability that only trait A has a causal variant
+- **PP B**: Probability that only trait B has a causal variant  
+- **PP C**: Probability that only trait C has a causal variant
+- **PP AB**: Probability that traits A and B share a causal variant
+- **PP AC**: Probability that traits A and C share a causal variant
+- **PP BC**: Probability that traits B and C share a causal variant
+- **PP ABC**: Probability that all three traits share a causal variant
 
-## 🚀 在线访问
+## 🚀 Live Demo
 
-**GitHub Pages地址**: `(https://andyfenghaonan-arch.github.io/transverse/)`
+**GitHub Pages URL**: `https://andyfenghaonan-arch.github.io/transverse/`
 
-## 📁 文件结构
+## 📁 File Structure
 
 ```
 eqtl-visualization/
-├── index.html              # 主页面
-├── script.js              # JavaScript逻辑
-├── style.css              # 样式文件
-├── Transverse.2MR.moloc   # Moloc数据文件
-├── data.json              # JSON数据文件（如果需要）
-└── README.md              # 项目说明
+├── index.html              # Main page
+├── script.js              # JavaScript logic
+├── style.css              # Stylesheet
+├── Transverse.2MR.moloc   # Moloc data file
+├── data.json              # JSON data file (if needed)
+├── deploy.bat             # Windows deployment script
+├── deploy.ps1             # PowerShell deployment script
+└── README.md              # Project documentation
 ```
 
-## 🔧 本地运行
+## 🔧 Local Development
 
-1. 克隆仓库到本地
-2. 启动本地服务器（必须使用HTTP协议，不能直接打开HTML文件）：
+1. Clone the repository locally
+2. Start a local server (must use HTTP protocol, cannot open HTML files directly):
    ```bash
-   # 使用Python
+   # Using Python
    python -m http.server 8000
    
-   # 或使用Node.js
+   # Or using Node.js
    npx serve .
    ```
-3. 访问 `http://localhost:8000`
+3. Visit `http://localhost:8000`
 
-## 📋 部署到GitHub Pages
+## 📋 Deploy to GitHub Pages
 
-1. **创建GitHub仓库**
-2. **上传所有文件**
-3. **启用GitHub Pages**：
-   - 进入仓库的Settings页面
-   - 滚动到Pages部分
-   - 选择Source为"Deploy from a branch"
-   - 选择分支为"main"或"master"
-   - 选择文件夹为"/ (root)"
-   - 点击Save
-4. **等待部署完成**（通常1-2分钟）
-5. **访问你的网站**：`https://yourusername.github.io/repository-name/`
+### Automatic Deployment (Recommended)
+1. **Run the deployment script**:
+   - Double-click `deploy.bat` (Windows)
+   - Or run `deploy.ps1` with PowerShell
+2. **The script will automatically**:
+   - Initialize Git repository
+   - Add all files and commit
+   - Push to GitHub
 
-## 💡 使用说明
+### Manual Deployment
+1. **Create GitHub repository**
+2. **Upload all files**
+3. **Enable GitHub Pages**:
+   - Go to repository Settings page
+   - Scroll to Pages section
+   - Select Source as "Deploy from a branch"
+   - Choose branch as "main"
+   - Select folder as "/ (root)"
+   - Click Save
+4. **Wait for deployment** (usually 1-2 minutes)
+5. **Access your website**: `https://andyfenghaonan-arch.github.io/transverse/`
 
-1. **页面加载**：网页会自动加载Moloc数据并显示初始可视化
-2. **选择过滤器**：
-   - 选择基因：其他选项会自动过滤
-   - 选择疾病/性状：其他选项会相应更新
-   - 选择暴露因子：其他选项会相应更新
-3. **切换可视化类型**：使用"Visualization Type"下拉菜单
-4. **查看详细信息**：右侧面板显示当前选择的详细分析信息
+## 💡 Usage Instructions
 
-## 🛠️ 技术栈
+1. **Page Loading**: The webpage automatically loads Moloc data and displays initial visualization
+2. **Select Filters**:
+   - Select Gene: Other options will automatically filter
+   - Select Disease/Trait: Other options will update accordingly
+   - Select Exposure Factor: Other options will update accordingly
+3. **Switch Visualization Types**: Use the "Visualization Type" dropdown menu
+4. **View Details**: The right panel shows detailed analysis information for current selection
 
-- **前端**: HTML5, CSS3, JavaScript (ES6+)
-- **图表库**: Chart.js, D3.js
-- **部署**: GitHub Pages
-- **数据格式**: TSV (Tab-Separated Values)
+## 🛠️ Tech Stack
 
-## 📈 数据格式要求
+- **Frontend**: HTML5, CSS3, JavaScript (ES6+)
+- **Chart Libraries**: Chart.js, D3.js
+- **Deployment**: GitHub Pages
+- **Data Format**: TSV (Tab-Separated Values)
 
-Moloc数据文件应包含以下列：
-- `exposure`: 暴露因子
-- `outcome`: 结果变量
-- `gene`: 基因名称
-- `diseases`: 疾病/性状名称
-- `nsnps`: SNP数量
-- `pp_a`, `pp_b`, `pp_c`, `pp_ab`, `pp_ac`, `pp_bc`, `pp_abc`: 各种后验概率
-- `best_SNP_*`: 最佳SNP信息
+## 📈 Data Format Requirements
 
-## 🎨 自定义
+Moloc data file should contain the following columns:
+- `exposure`: Exposure factor
+- `outcome`: Outcome variable
+- `gene`: Gene name
+- `diseases`: Disease/trait name
+- `nsnps`: Number of SNPs
+- `pp_a`, `pp_b`, `pp_c`, `pp_ab`, `pp_ac`, `pp_bc`, `pp_abc`: Various posterior probabilities
+- `best_SNP_*`: Best SNP information
 
-你可以通过修改以下文件来自定义界面：
-- `style.css`: 修改颜色、字体、布局等
-- `script.js`: 修改可视化逻辑或添加新功能
-- `index.html`: 修改页面结构或添加新元素
+## 🎨 Customization
 
-## 📞 支持
+You can customize the interface by modifying the following files:
+- `style.css`: Modify colors, fonts, layout, etc.
+- `script.js`: Modify visualization logic or add new features
+- `index.html`: Modify page structure or add new elements
 
-如有问题或建议，请创建Issue。
+## 🔍 Example Usage
+
+1. **Initial View**: All data displayed with default visualization
+2. **Filter by Gene**: Select "GORAB" → other dropdowns show only related options
+3. **Filter by Disease**: Select "FVC" → exposure options further filtered
+4. **Visualization Types**: 
+   - **Posterior Probabilities**: Bar chart comparing PP values
+   - **Evidence Heatmap**: Bubble chart showing evidence strength
+   - **Data Table**: Complete tabular view with highlighted maximum probabilities
+   - **SNP Evidence**: Analysis of SNP frequency and average probabilities
+
+## 📊 Interpretation Guide
+
+- **High PP values (>0.7)**: Strong evidence for colocalization
+- **Moderate PP values (0.3-0.7)**: Moderate evidence
+- **Low PP values (<0.3)**: Weak evidence
+- **PP ABC**: Strongest evidence for shared causal variants across all three traits
+
+## 📞 Support
+
+For questions or suggestions, please create an Issue.
+
+## 📄 License
+
+This project is open source and available under the MIT License.
 
 ---
 
-**注意**: 由于浏览器安全限制，本网站必须通过HTTP(S)协议访问，不能直接打开本地HTML文件。建议部署到GitHub Pages或使用本地服务器。
+**Note**: Due to browser security restrictions, this website must be accessed via HTTP(S) protocol and cannot be opened as a local HTML file directly. Deployment to GitHub Pages or using a local server is recommended.
